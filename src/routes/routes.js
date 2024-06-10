@@ -49,9 +49,9 @@ export default function Rotas() {
                 }} />
 
             <Tab.Screen
-                name='Sacola' component={Cart} options={{
+                name='Manga' component={Cart} options={{
                     tabBarIcon: ({ color, size }) => (
-                        <Ionicons  name="bag" color={color} size={size} />)
+                        <Ionicons  name="book" color={color} size={size} />)
                 }} />
 
             <Tab.Screen 

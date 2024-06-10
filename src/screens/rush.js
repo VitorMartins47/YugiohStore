@@ -1,29 +1,36 @@
 import React from "react";
 import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import styles from "../styles/styles";
+import Rush from "../../assets/RUSHD.png"
+import Jinzo from "../../assets/jinzo.png"
+import Blue from "../../assets/maxblue.png"
+import Pote from "../../assets/pote.png"
+import Caos from "../../assets/caos.png"
+import Yugi from "../../assets/YUGI.png"
+import Exodia from "../../assets/exodia.png"
+import Cavera from "../../assets/dragaocaveira.png"
+
+
+
+
+
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native-web";
 
-export default function Cart() {
-    return <ScrollView>
-         <View style={styles.TopBarSearch}>
+export default function Rush() {
+    return (
+        <ScrollView style={styles.tela}>
+        <View style={styles.TopBarSearch}>
             <Ionicons name="search" style={styles.Icon}/>
             <TextInput style={styles.SearchTextInput} placeholder="Faça sua pesquisa"/>
-        </View>
-        <View style={styles.ViewContinueComprando}>
-            <Text style={styles.TextTopMenu}>Mensagem sobre os produtos em seu carrinho </Text>
+            <Ionicons name="log-in" style={styles.Icon}/>
         </View>
 
-        <View style={styles.ViewContinueComprando}>
-            <Text>Subtotal:</Text>
-            <Text style={styles.TextTopMenu}> R$ 1200,00 </Text>
-        </View>
-        <View>
-            <TouchableOpacity style={styles.ViewButtonCart}>
-                Fechar pedido
-            </TouchableOpacity>
-        </View>
+        <Text style={styles.TextTopMenu}>Qual tipo de Cartas?</Text>
 
-
-    </ScrollView>
+       
+      
+        
+        </ScrollView>
+    )
 }
