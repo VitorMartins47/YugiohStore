@@ -9,15 +9,10 @@ import Caos from "../../assets/caos.png"
 import Yugi from "../../assets/YUGI.png"
 import Exodia from "../../assets/exodia.png"
 import Cavera from "../../assets/dragaocaveira.png"
-
-
-
-
-
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native-web";
 
-export default function Rush() {
+export default function Rushduel() {
     return (
         <ScrollView style={styles.tela}>
         <View style={styles.TopBarSearch}>
