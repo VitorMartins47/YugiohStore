@@ -5,10 +5,11 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Ionicons } from "@expo/vector-icons";
 import styles from "../styles/styles";
 import Login from "../screens/login";
-import Home from "../screens/home";
+import Inicio from "../screens/inicio";
 import Menu from "../screens/menu";
 import Conta from "../screens/conta";
 import Cart from "../screens/cart";
+import Home from "./home";
 const Tab = createBottomTabNavigator();
 
 export default function Rotas() {
@@ -42,7 +43,7 @@ export default function Rotas() {
 
         }}>
             <Tab.Screen
-                name='Cartas' component={Home} options={{
+                name='' component={Inicio} options={{
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons  name="tablet-portrait" color={color} size={size} />)
                 }} />

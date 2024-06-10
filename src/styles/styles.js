@@ -6,7 +6,7 @@ const width = Dimensions.get('screen').width;
 export default StyleSheet.create({
 
     tela:{
-        flex:1
+        flex:1,
     },
 
     BackgroundAmazon:{
@@ -104,8 +104,7 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         flexDirection: 'row',
-        rowGap: '5px',
-        paddingHorizontal: '10px',
+
     },
 
     ViewRushMaster:{
@@ -113,17 +112,15 @@ export default StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         flexDirection: 'row',
-        rowGap: '5px',
-        paddingHorizontal: '10px',
+    
     },
 
-    ViewContinueComprando:{
+    ViewTextAlto:{
        
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         flexDirection: 'row',
-        rowGap: '5px',
         paddingHorizontal: '10px',
         marginVertical: '10px'
     },
@@ -192,14 +189,21 @@ export default StyleSheet.create({
     },
 
     YugiohRushLogoImage:{
-        width: 220,
-        height: 100
+        width: 200,
+        height: 100,
+       
     },
 
     YugiohLogoImage:{
-        width: 220,
-        height: 200,
-        marginBottom: 50,
+        width: 200,
+        height: 100,
+       
+    },
+
+    BlueText:{
+        color: 'blue',
+        borderWidth: 10,
+        borderColor: "white"
     }
 
 })
