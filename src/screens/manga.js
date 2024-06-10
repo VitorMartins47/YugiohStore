@@ -1,23 +1,10 @@
 import React from "react";
 import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import styles from "../styles/styles";
-import Rush from "../../assets/RUSHD.png"
-import Jinzo from "../../assets/jinzo.png"
-import Blue from "../../assets/maxblue.png"
-import Pote from "../../assets/pote.png"
-import Caos from "../../assets/caos.png"
-import Yugi from "../../assets/YUGI.png"
-import Exodia from "../../assets/exodia.png"
-import Cavera from "../../assets/dragaocaveira.png"
-
-
-
-
-
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native-web";
 
-export default function Inicio({navigation}) {
+export default function Manga() {
     return (
         <ScrollView style={styles.tela}>
         <View style={styles.TopBarSearch}>
