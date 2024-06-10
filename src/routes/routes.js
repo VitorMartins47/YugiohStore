@@ -8,7 +8,7 @@ import Login from "../screens/login";
 import Inicio from "../screens/inicio";
 import Menu from "../screens/menu";
 import Conta from "../screens/conta";
-import Cart from "../screens/cart";
+import Manga from "../screens/manga";
 import Home from "../routes/home";
 const Tab = createBottomTabNavigator();
 
@@ -49,7 +49,7 @@ export default function Rotas() {
                 }} />
 
             <Tab.Screen
-                name='Manga' component={Cart} options={{
+                name='Manga' component={Manga} options={{
                     tabBarIcon: ({ color, size }) => (
                         <Ionicons  name="book" color={color} size={size} />)
                 }} />

@@ -3,6 +3,7 @@ import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import styles from "../styles/styles";
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native-web";
+import MangaDM from "../../assets/mangaimage.png"
 
 export default function Manga() {
     return (
@@ -13,26 +14,12 @@ export default function Manga() {
             <Ionicons name="log-in" style={styles.Icon}/>
         </View>
 
-        <Text style={styles.TextTopMenu}>Qual tipo de Cartas?</Text>
+        <Text style={styles.TextTopMenu}>Qual Manga quer ler?</Text>
 
-       
-       <View style={styles.ViewRushMaster}>
-        <TouchableOpacity >
-        <Image source={Yugi} style={styles.YugiohLogoImage}/> 
-        </TouchableOpacity>
-
-        <TouchableOpacity onPress={() => {navigation.navigate('Rush')}}>
-        <Image source={Rush} style={styles.YugiohRushLogoImage}/> 
-        </TouchableOpacity>
-       </View>
-
-       <View style={styles.ViewTextAlto}>
-        <Text style={styles.TextTopMenu}>Ver Cartas</Text>
-       </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Caos} style={styles.ImageProdutos}/>
-            <Image source={Blue} style={styles.ImageProdutos}/>
+            <Image source={MangaDM} style={styles.ImageProdutos}/>
+            <Image source={MangaDM} style={styles.ImageProdutos}/>
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
@@ -41,8 +28,8 @@ export default function Manga() {
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Jinzo} style={styles.ImageProdutos}/>
-            <Image source={Pote} style={styles.ImageProdutos}/>
+            <Image source={MangaDM} style={styles.ImageProdutos}/>
+            <Image source={MangaDM} style={styles.ImageProdutos}/>
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
@@ -51,8 +38,8 @@ export default function Manga() {
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Exodia} style={styles.ImageProdutos}/>
-            <Image source={Cavera} style={styles.ImageProdutos}/>
+            <Image source={MangaDM} style={styles.ImageProdutos}/>
+            <Image source={MangaDM} style={styles.ImageProdutos}/>
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>

@@ -24,7 +24,49 @@ export default function Rushduel() {
         <Text style={styles.TextTopMenu}>Qual tipo de Cartas?</Text>
 
        
-      
+       <View style={styles.ViewRushMaster}>
+        <TouchableOpacity onPress={() => {navigation.navigate('Inicio')}}>
+        <Image source={Yugi} style={styles.YugiohLogoImage}/> 
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={() => {navigation.navigate('Rush')}}>
+        <Image source={Rush} style={styles.YugiohRushLogoImage}/> 
+        </TouchableOpacity>
+       </View>
+
+       <View style={styles.ViewTextAlto}>
+        <Text style={styles.TextTopMenu}>Ver Cartas</Text>
+       </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Image source={Caos} style={styles.ImageProdutos}/>
+            <Image source={Blue} style={styles.ImageProdutos}/>
+        </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+        </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Image source={Jinzo} style={styles.ImageProdutos}/>
+            <Image source={Pote} style={styles.ImageProdutos}/>
+        </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+        </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Image source={Exodia} style={styles.ImageProdutos}/>
+            <Image source={Cavera} style={styles.ImageProdutos}/>
+        </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+        </View>
         
         </ScrollView>
     )
