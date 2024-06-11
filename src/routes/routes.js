@@ -7,7 +7,7 @@ import styles from "../styles/styles";
 import Login from "../screens/login";
 import Inicio from "../screens/inicio";
 import Menu from "../screens/menu";
-import Conta from "../screens/conta";
+import Anime from "../screens/anime";
 import Manga from "../screens/manga";
 import Home from "../routes/home";
 const Tab = createBottomTabNavigator();
@@ -55,9 +55,9 @@ export default function Rotas() {
                 }} />
 
             <Tab.Screen 
-                name='Conta' component={Conta} options={{
+                name='Anime' component={Anime} options={{
                     tabBarIcon: ({ color, size }) => (
-                        <Ionicons On name="person" color={color} size={size} />)
+                        <Ionicons On name="play" color={color} size={size} />)
                 }} />
 
         </Tab.Navigator>

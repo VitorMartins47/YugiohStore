@@ -3,10 +3,13 @@ import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import styles from "../styles/styles";
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native-web";
-import MangaDM from "../../assets/mangaimage.png"
-import MangaGX from "../../assets/mangafds.png"
-import Manga5ds from "../../assets/mangagx.png"
-import MangaArcv from "../../assets/mangaarcv.png"
+import Filme1 from "../../assets/filme1.png"
+import Filme2 from "../../assets/filme2.png"
+import Filme3 from "../../assets/filme3.png"
+import AnimeGx from "../../assets/animegx.png"
+import AnimeDm from "../../assets/animedm.png"
+import AnimeFds from "../../assets/animefds.png"
+
 
 export default function Manga() {
     return (
@@ -21,8 +24,8 @@ export default function Manga() {
 
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={MangaDM} style={styles.ImageProdutos}/>
-            <Image source={MangaGX} style={styles.ImageProdutos}/>
+            <Image source={Filme1} style={styles.ImageProdutos}/>
+            <Image source={Filme2} style={styles.ImageProdutos}/>
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
@@ -31,8 +34,18 @@ export default function Manga() {
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Manga5ds} style={styles.ImageProdutos}/>
-            <Image source={MangaArcv} style={styles.ImageProdutos}/>
+            <Image source={Filme3} style={styles.ImageProdutos}/>
+            <Image source={AnimeDm} style={styles.ImageProdutos}/>
+        </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+            <Text  style={styles.BlueText}>Ver mais</Text>
+        </View>
+
+        <View style={styles.ViewProdutos} horizontal={true}>
+            <Image source={AnimeGx} style={styles.ImageProdutos}/>
+            <Image source={AnimeFds} style={styles.ImageProdutos}/>
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>

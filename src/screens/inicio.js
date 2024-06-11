@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import styles from "../styles/styles";
 import Rush from "../../assets/RUSHD.png"
-import Jinzo from "../../assets/jinzo.png"
+import Jinzoo from "../../assets/jinzo.png"
 import Blue from "../../assets/maxblue.png"
 import Pote from "../../assets/pote.png"
 import Caos from "../../assets/caos.png"
@@ -23,7 +23,7 @@ export default function Inicio({navigation}) {
         <View style={styles.TopBarSearch}>
             <Ionicons name="search" style={styles.Icon}/>
             <TextInput style={styles.SearchTextInput} placeholder="Faça sua pesquisa"/>
-            <Ionicons name="log-in" style={styles.Icon}/>
+            <Ionicons name="log-in" style={styles.Icon} onPress={() => {navigation.navigate('Login')}}/>
         </View>
 
         <Text style={styles.TextTopMenu}>Qual tipo de Cartas?</Text>
@@ -34,7 +34,7 @@ export default function Inicio({navigation}) {
         <Image source={Yugi} style={styles.YugiohLogoImage}/> 
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => {navigation.navigate('Rush')}}>
+        <TouchableOpacity onPress={() => {navigation.navigate('Rushduel')}}>
         <Image source={Rush} style={styles.YugiohRushLogoImage}/> 
         </TouchableOpacity>
        </View>
@@ -54,7 +54,9 @@ export default function Inicio({navigation}) {
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Jinzo} style={styles.ImageProdutos}/>
+            <TouchableOpacity onPress={() => {navigation.navigate('Jinzo')}}>
+            <Image source={Jinzoo} style={styles.ImageProdutos}/>
+            </TouchableOpacity>
             <Image source={Pote} style={styles.ImageProdutos}/>
         </View>
 

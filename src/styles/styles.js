@@ -9,38 +9,23 @@ export default StyleSheet.create({
         flex:1,
     },
 
-    BackgroundAmazon:{
-        backgroundColor:"whitesmoke"
-
-    },
-
-    LogoAmazon: {
-        width: 300,
-        height: 300,
-        marginVertical: 'auto',
-        marginHorizontal :'auto',
-        alignContent: 'center',
-        display: 'flex',
-        justifyContent: 'center'
-        
-    },
 
     InputLogin: {
         height: 50,
         marginHorizontal: 20,
         marginBottom: 5,
         borderWidth: 2,
-        borderColor: 'orange',
+        borderColor: 'blue',
         borderRadius: 6,
         backgroundColor: 'white'
     },
 
     ButtonLogin:{
-        backgroundColor: 'orange',
+        backgroundColor: 'blue',
         textAlign: 'center',
         alignSelf: 'center',
-        width: 150,
-        height: 100,
+        width: 100,
+        height: 75,
         marginHorizontal: 20,
         marginTop: 50,
         justifyContent: 'center',
@@ -57,10 +42,9 @@ export default StyleSheet.create({
 
     miniText:{
         justifyContent: 'center',
-        color:'grey',
+        color:'black',
         alignContent: 'center',
         textAlign: 'center',
-        marginVertical:100
     },
     
     TopBarSearch:{
@@ -204,6 +188,21 @@ export default StyleSheet.create({
         color: 'blue',
         borderWidth: 10,
         borderColor: "white"
-    }
+    },
 
+    ViewCartaZoon:{
+        display: 'flex',
+        alignItems: 'center',
+        alignContent: 'center',
+        
+        
+        width:150,
+        height:220
+
+    },
+
+    ZoonCartaBorder:{
+        borderWidth: 1,
+        borderColor: 'black'
+    }
 })

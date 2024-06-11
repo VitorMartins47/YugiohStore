@@ -1,14 +1,16 @@
 import React from "react";
 import { View, Text, TextInput, Image, TouchableOpacity } from "react-native";
 import styles from "../styles/styles";
-import Rush from "../../assets/RUSHD.png"
-import Jinzo from "../../assets/jinzo.png"
-import Blue from "../../assets/maxblue.png"
-import Pote from "../../assets/pote.png"
-import Caos from "../../assets/caos.png"
 import Yugi from "../../assets/YUGI.png"
-import Exodia from "../../assets/exodia.png"
-import Cavera from "../../assets/dragaocaveira.png"
+import Salame from "../../assets/salamagrande.png"
+import Mago from "../../assets/magnonegro.png"
+import Meteor from "../../assets/fullmeteor.png"
+import Cartrush from "../../assets/cartrush.png"
+import Rush from "../../assets/RUSHD.png"
+
+
+
+
 import { Ionicons } from "@expo/vector-icons";
 import { ScrollView } from "react-native-web";
 
@@ -18,7 +20,7 @@ export default function Rushduel() {
         <View style={styles.TopBarSearch}>
             <Ionicons name="search" style={styles.Icon}/>
             <TextInput style={styles.SearchTextInput} placeholder="Faça sua pesquisa"/>
-            <Ionicons name="log-in" style={styles.Icon}/>
+            <Ionicons name="log-in" style={styles.Icon} onPress={() => {navigation.navigate('Login')}}/>
         </View>
 
         <Text style={styles.TextTopMenu}>Qual tipo de Cartas?</Text>
@@ -39,8 +41,8 @@ export default function Rushduel() {
        </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Caos} style={styles.ImageProdutos}/>
-            <Image source={Blue} style={styles.ImageProdutos}/>
+            <Image source={Salame} style={styles.ImageProdutos}/>
+            <Image source={Meteor} style={styles.ImageProdutos}/>
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
@@ -49,8 +51,8 @@ export default function Rushduel() {
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Jinzo} style={styles.ImageProdutos}/>
-            <Image source={Pote} style={styles.ImageProdutos}/>
+            <Image source={Mago} style={styles.ImageProdutos}/>
+            <Image source={Cartrush} style={styles.ImageProdutos}/>
         </View>
 
         <View style={styles.ViewProdutos} horizontal={true}>
@@ -58,15 +60,7 @@ export default function Rushduel() {
             <Text  style={styles.BlueText}>Ver mais</Text>
         </View>
 
-        <View style={styles.ViewProdutos} horizontal={true}>
-            <Image source={Exodia} style={styles.ImageProdutos}/>
-            <Image source={Cavera} style={styles.ImageProdutos}/>
-        </View>
-
-        <View style={styles.ViewProdutos} horizontal={true}>
-            <Text  style={styles.BlueText}>Ver mais</Text>
-            <Text  style={styles.BlueText}>Ver mais</Text>
-        </View>
+        
         
         </ScrollView>
     )
